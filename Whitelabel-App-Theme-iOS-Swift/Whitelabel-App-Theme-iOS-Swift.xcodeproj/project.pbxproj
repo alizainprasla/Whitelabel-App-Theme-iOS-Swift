@@ -15,6 +15,8 @@
 		07937A8A27AAC41B0043CD62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07937A8827AAC41B0043CD62 /* LaunchScreen.storyboard */; };
 		07937A9527AAC41C0043CD62 /* Whitelabel_App_Theme_iOS_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07937A9427AAC41C0043CD62 /* Whitelabel_App_Theme_iOS_SwiftTests.swift */; };
 		07937AAE27AC4FE40043CD62 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07937AAD27AC4FE40043CD62 /* CustomView.swift */; };
+		07937AB127AC61F80043CD62 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07937AB027AC61F80043CD62 /* UILabel.swift */; };
+		07937AB427AC66180043CD62 /* TextConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07937AB327AC66180043CD62 /* TextConfigurable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 		07937A9027AAC41C0043CD62 /* Whitelabel-App-Theme-iOS-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Whitelabel-App-Theme-iOS-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07937A9427AAC41C0043CD62 /* Whitelabel_App_Theme_iOS_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whitelabel_App_Theme_iOS_SwiftTests.swift; sourceTree = "<group>"; };
 		07937AAD27AC4FE40043CD62 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		07937AB027AC61F80043CD62 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		07937AB327AC66180043CD62 /* TextConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextConfigurable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 		07937A7C27AAC4190043CD62 /* Whitelabel-App-Theme-iOS-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				07937AB227AC62150043CD62 /* UIProtocol */,
+				07937AAF27AC61E00043CD62 /* UIExtension */,
 				07937A7D27AAC4190043CD62 /* AppDelegate.swift */,
 				07937A7F27AAC4190043CD62 /* SceneDelegate.swift */,
 				07937A8127AAC4190043CD62 /* ViewController.swift */,
@@ -98,6 +104,22 @@
 				07937A9427AAC41C0043CD62 /* Whitelabel_App_Theme_iOS_SwiftTests.swift */,
 			);
 			path = "Whitelabel-App-Theme-iOS-SwiftTests";
+			sourceTree = "<group>";
+		};
+		07937AAF27AC61E00043CD62 /* UIExtension */ = {
+			isa = PBXGroup;
+			children = (
+				07937AB027AC61F80043CD62 /* UILabel.swift */,
+			);
+			path = UIExtension;
+			sourceTree = "<group>";
+		};
+		07937AB227AC62150043CD62 /* UIProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				07937AB327AC66180043CD62 /* TextConfigurable.swift */,
+			);
+			path = UIProtocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,10 +223,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07937AB127AC61F80043CD62 /* UILabel.swift in Sources */,
 				07937A8227AAC4190043CD62 /* ViewController.swift in Sources */,
 				07937AAE27AC4FE40043CD62 /* CustomView.swift in Sources */,
 				07937A7E27AAC4190043CD62 /* AppDelegate.swift in Sources */,
 				07937A8027AAC4190043CD62 /* SceneDelegate.swift in Sources */,
+				07937AB427AC66180043CD62 /* TextConfigurable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

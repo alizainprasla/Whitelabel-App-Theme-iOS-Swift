@@ -18,6 +18,4 @@ class CustomView: UIView {
             backgroundColor = theme
         }
     }
-    
-    
 }
