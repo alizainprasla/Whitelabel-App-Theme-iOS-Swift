@@ -17,19 +17,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
-        
-        
         // Custom View
         CustomView.appearance().theme = .systemPink
+        let customViewSubViews = UIView.appearance(whenContainedInInstancesOf: [CustomView.self])
+        customViewSubViews.semanticContentAttribute = .forceRightToLeft
+        
         let label = UILabel.appearance(whenContainedInInstancesOf: [CustomView.self])
         label.fontFamily = UIFont(name: "Avenir", size: 16)!
-        
-        
-        // UIViewController
-        //let controllerContainerView = UIView.appearance(whenContainedInInstancesOf: [UIViewController.self])
-        //controllerContainerView.backgroundColor = .black
-        
-        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
